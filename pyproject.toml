@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "website-check"
+version = "1.0.0"
+description = "Website check for local businesses: SEO, speed, mobile and local signals (Dutch reports)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Iverium Software"}]
+keywords = ["seo", "website-check", "local-seo", "audit", "ssrf"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Natural Language :: Dutch",
+    "Topic :: Internet :: WWW/HTTP :: Site Management",
+]
+
+[project.urls]
+Homepage = "https://www.iverium.nl/website-check"
+Source = "https://github.com/Iverium/website-check"
+
+[project.scripts]
+website-check = "website_check.__main__:main"
+
+[tool.setuptools]
+packages = ["website_check"]
